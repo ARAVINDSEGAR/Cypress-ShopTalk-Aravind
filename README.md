@@ -23,11 +23,12 @@
 ### Setup & Installation
 
 1. **Clone the repository:**
-	git clone
-	cd
-	**Download / extract the folder:**
-	Download the folder and files provided via Email
-	Open terminal in the project directory
+	1. git clone
+	2. cd
+    
+2. **OR Download / extract the folder:**
+	1. Download the folder and files provided via Email
+	2. Open terminal in the project directory
 	
 2. **Install dependencies:**
 	npm install
@@ -64,11 +65,11 @@
 2. Screenshots and videos of failures are automatically stored for debugging.
 3. Added a *"tests" : npx cypress run* in the *package.json* file to quickly execute tests using *npm run tests*
 
-## To be Implemented in real project
-1. Use *Yarn* package manager 
+## To be Implemented in real projectUse *Yarn* package manager 
 Yarn generally offers faster performance than npm because it installs packages in parallel and efficiently caches dependencies.
 Also, we can use the following command to execute the tests sequentially, as some tests may depend on previous ones. This approach is helpful because Cypress does not guarantee that tests will run in order by default:
 **yarn run tests --spec $(find cypress/e2e -name '*.cy.js' | sort)**
+
 This command finds all test spec files in the cypress/e2e directory, sorts them alphabetically, and runs them in that sequence to maintain order.
 I am not implementing this now because the *find* command works on linux/mac, but i am currently testing this application on Windows. However, I have used this approach successfully in a previous project.
 		
