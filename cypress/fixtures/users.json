@@ -1,0 +1,18 @@
+{
+  "correct_login": {
+    "email": "admin@test.com",
+    "password": "password123"
+  },
+  "invalid_email_login": {
+    "email": "admintest.@com",
+    "password": "password123"
+  },
+  "invalid_password_login": {
+    "email": "admin@test.com",
+    "password": "pass"
+  },
+  "incorrect_login": {
+    "email": "aravind@gmail.com",
+    "password": "aravind"
+  }
+}

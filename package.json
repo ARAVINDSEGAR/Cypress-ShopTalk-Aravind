@@ -1,0 +1,16 @@
+{
+  "name": "cypress-shoptalk-aravind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tests": "npx cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "QA Engineer technical assessment for automated testing with Cypress",
+  "devDependencies": {
+    "cypress": "^14.5.4"
+  }
+}
