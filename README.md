@@ -1,5 +1,5 @@
 # Cypress-ShopTalk-Aravind
-# Cypress Interview Assessment - ShopTalk by Aravind SEGAR
+# Cypress Interview Assessment - ShopTalk
 
 - This project demonstrates end-to-end (E2E) and API testing for the ShopTalk application, using Cypress for browser automation.
 - Each test scripts fulfills a real-world scenarios by covering navigation, authentication, API integration, protected routes, pagination, error handling, and form validation.
@@ -15,9 +15,6 @@
 - Contact Form Testing
 - Posts Page with Nested API Calls
 
-### project structure screenshot
-
-
 ### prerequisite
 
 1. Node.js must be installed. If not, download and install it from https://nodejs.org/en/download
@@ -25,23 +22,22 @@
 
 ### Setup & Installation
 
-1. **Clone the repository:**: 
-	git clone <your-repo-url>
-	cd <project-directory>
-	or
-	**Download / extract the folder:**:
+1. **Clone the repository:**
+	git clone
+	cd
+	**Download / extract the folder:**
 	Download the folder and files provided via Email
 	Open terminal in the project directory
 	
-2. **Install dependencies:**: 
+2. **Install dependencies:**
 	npm install
 	
 
 ### configuration
 
 1. Cypress config is found in *cypress.config.js*
-		1.1 baseUrl - for centralized base url setup for all tests.
-		1.2 screenshotOnRunFailure: true - enables automatic screenshot capture on failure.
+	1. baseUrl - for centralized base url setup for all tests.
+	2. screenshotOnRunFailure: true - enables automatic screenshot capture on failure.
 
 2. Fixtures such as *users.json* provide test data for various login scenarios.
 
@@ -51,11 +47,11 @@
 
 ## How to run tests
 
-1. **Run all tests in headless mode:**:
+1. **Run all tests in headless mode:**
 	npm run tests
-	**Run a specific spec:**:
+2. **Run a specific spec:**
 	npx cypress run --spec "cypress/e2e/1.NavigationVerifications.cy.js"
-	**Run Cypress in locally:**:
+3. **Run Cypress in locally:**
 	npx cypress open
 
 ## Custom Commands & Page Objects
@@ -70,9 +66,9 @@
 
 ## To be Implemented in real project
 1. Use *Yarn* package manager 
-		1. Yarn generally offers faster performance than npm because it installs packages in parallel and efficiently caches dependencies.
-		2. Also, we can use the following command to execute the tests sequentially, as some tests may depend on previous ones. This approach is helpful because Cypress does not guarantee that tests will run in order by default:
-		yarn run tests --spec $(find cypress/e2e -name '*.cy.js' | sort)
-		3. This command finds all test spec files in the cypress/e2e directory, sorts them alphabetically, and runs them in that sequence to maintain order.
-		4. I am not implementing this now because the *find* command works on linux/mac, but i am currently testing this application on Windows. However, I have used this approach successfully in a previous project.
+Yarn generally offers faster performance than npm because it installs packages in parallel and efficiently caches dependencies.
+Also, we can use the following command to execute the tests sequentially, as some tests may depend on previous ones. This approach is helpful because Cypress does not guarantee that tests will run in order by default:
+**yarn run tests --spec $(find cypress/e2e -name '*.cy.js' | sort)**
+This command finds all test spec files in the cypress/e2e directory, sorts them alphabetically, and runs them in that sequence to maintain order.
+I am not implementing this now because the *find* command works on linux/mac, but i am currently testing this application on Windows. However, I have used this approach successfully in a previous project.
 		
